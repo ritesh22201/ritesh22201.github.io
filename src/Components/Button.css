@@ -1,0 +1,23 @@
+#button {
+    padding: 7px 17px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to right, #01b395, #03bd69);
+    font-family: cursive;
+    text-decoration: none;
+  }
+
+  #button:hover{
+    animation: pulse;
+  }
+
+  .bg{
+    background-color: #171518;
+  }
+
+
+
+
+
+
