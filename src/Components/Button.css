@@ -6,11 +6,19 @@
     background-image: linear-gradient(to right, #01b395, #03bd69);
     font-family: cursive;
     text-decoration: none;
+    transition: 1s ease;
   }
 
   #button:hover{
-    animation: pulse;
+    /* padding:10px 17px;
+    transition: 0.3s; */
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+    transition: 1s ease;
   }
+
+  
 
   .bg{
     background-color: #171518;

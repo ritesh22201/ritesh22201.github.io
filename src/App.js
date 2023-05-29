@@ -12,6 +12,7 @@ function App() {
       <Navbar/>
       {/* <AllRoutes/> */}
       <Home/>
+      <About/>
     </div>
   );
 }

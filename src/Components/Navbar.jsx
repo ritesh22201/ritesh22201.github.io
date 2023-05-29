@@ -11,22 +11,24 @@ const Navbar = () => {
     }
 
     return (
-        <Box position="sticky" top='0' className={'bg'} color={'white'} id='nav-menu' p={'12px 0'} fontSize={'19px'}>
-            <Flex m='0 30px' p={'10px'} alignItems={'center'} justifyContent={'space-between'}>
-                <Box fontSize='25px' textAlign='start' w={'20%'}>
-                    Ritesh
-                </Box>
-                <Box w={'55%'}>
-                    <Flex justifyContent={'space-between'} alignItems={'center'}>
-                        <HashLink className='animate__animated animate__pulse' style={{ textDecoration:"none"}} to='/'>Home</HashLink>
-                        <HashLink data-mdb-animation-start="onHover"  className='animate__animated animate__pulse' style={{ textDecoration:"none"}} to='/#about'>About</HashLink>
-                        <HashLink className='animate__animated animate__pulse' style={{ textDecoration:"none"}} to='/#skills'>Skills</HashLink>
-                        <HashLink className='animate__animated animate__pulse' style={{ textDecoration:"none"}} to='/#projects'>Projects</HashLink>
-                        <HashLink className='animate__animated animate__pulse' style={{ textDecoration:"none"}} to='/#contact'>Contact</HashLink>
-                        <Button onClick={resumeHandler} id='button' className='animate__animated animate__pulse'>Resume</Button>
-                    </Flex>
-                </Box>
-            </Flex>
+        <Box position="sticky" top='0' className={'bg'} color={'white'} p={'12px 0'} fontSize={'19px'}>
+            <nav id='nav-menu' className='nav-menu'>
+                <Flex m='0 30px' p={'10px'} alignItems={'center'} justifyContent={'space-between'}>
+                    <Box className='nav-logo' fontSize='25px' textAlign='start' w={'20%'}>
+                        Ritesh
+                    </Box>
+                    <Box w={'55%'}>
+                        <Flex justifyContent={'space-between'} alignItems={'center'}>
+                            <HashLink className='nav-link home' style={{ textDecoration: "none" }} to='/'>Home</HashLink>
+                            <HashLink className='nav-link about' style={{ textDecoration: "none" }} to='/#about'>About</HashLink>
+                            <HashLink className='nav-link skills' style={{ textDecoration: "none" }} to='/#skills'>Skills</HashLink>
+                            <HashLink className='nav-link projects' style={{ textDecoration: "none" }} to='/#projects'>Projects</HashLink>
+                            <HashLink className='nav-link contact' style={{ textDecoration: "none" }} to='/#contact'>Contact</HashLink>
+                            <Button onClick={resumeHandler} id='button' className='nav-link resume'>Resume</Button>
+                        </Flex>
+                    </Box>
+                </Flex>
+            </nav>
         </Box>
     )
 }
