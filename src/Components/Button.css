@@ -9,9 +9,7 @@
     transition: 1s ease;
   }
 
-  #button:hover{
-    /* padding:10px 17px;
-    transition: 0.3s; */
+  .button:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.1);
