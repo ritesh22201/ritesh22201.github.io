@@ -4,7 +4,7 @@ import about_img from '../Assets/about1_img.avif';
 
 const About = () => {
   return (
-    <Box id="about" className="about section bg">
+    <Box pb={'40px'} id="about" className="about section bg">
       <Heading pt={'30px'} mb={'30px'} textAlign={'center'} color={'gray.300'}>About Me</Heading>
       <Flex alignItems={'center'} gap={'30px'} p={'60px 40px'} w={'85%'} m={'auto'} bg={'#02b87f'}>
         <Image boxShadow= 'rgba(0, 0, 0, 0.24) 0px 3px 8px' borderRadius={'50%'} border={'1px outset gray'} w={'400px'} src={about_img} alt='img1' />

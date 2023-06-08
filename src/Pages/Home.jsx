@@ -7,7 +7,7 @@ import Ritesh_Goswami_Resume from '../Assets/Ritesh-Goswami-Resume.pdf';
 const Home = () => {
 
   return (
-    <Box p={'60px 0 40px 0'} id='home' color='white' className='bg' >
+    <Box p={'60px 0 40px 0'} id='home' color='white' bg={'black'} >
       <Flex justifyContent={'space-around'} alignItems={'center'}>
         <Box>
             <Heading color={'gray.300'} mb={'20px'} fontSize={'25px'}>Hi, I'M</Heading>

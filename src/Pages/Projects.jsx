@@ -63,7 +63,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <Box cursor={"pointer"} textAlign={"center"} id='projects' bg={"black"}
+    <Box cursor={"pointer"} textAlign={"center"} id='projects' className='bg'
       color={"white"}
     >
       <Heading
