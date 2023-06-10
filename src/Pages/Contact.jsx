@@ -26,11 +26,17 @@ const Contact = () => {
     } else {
       emailjs
         .sendForm(
-          "service_d3pb05e",
-          "template_21glk6d",
+          // "service_d3pb05e",
+          // "template_21glk6d",
+          // form.current,
+          // "94PuNf-lAN2EX85Ky"
+
+          "service_4bgtxc9",
+          "template_qpow83e",
           form.current,
-          "94PuNf-lAN2EX85Ky"
+          "5kq4glosIyTKn4MHl"
         )
+
         .then(
           (result) => {
             setDone(true);
