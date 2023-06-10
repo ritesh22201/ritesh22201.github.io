@@ -52,12 +52,12 @@ const Contact = () => {
   return (
     <Box p={'10px 0 30px 0'} color={'white'} id='contact' className='bg'>
       <Heading p={'30px 0'} textAlign={'center'} color={'gray.300'}>Contact</Heading>
-      <form ref={form} onSubmit={sendEmail}>
-        <Input type="text" name="from_name" className="user" placeholder="Name" onChange={handleChange} />
-        <Input type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
-        <Textarea name="message" className="user" placeholder="Message" onChange={handleChange} />
+      <form style={{width : '40%', margin : 'auto'}} ref={form} onSubmit={sendEmail}>
+        <Input mb={'10px'} type="text" name="from_name" className="user" placeholder="Name" onChange={handleChange} />
+        <Input mb={'10px'} type="email" name="reply_to" className="user" placeholder="Email" onChange={handleChange} />
+        <Textarea mb={'10px'} name="message" className="user" placeholder="Message" onChange={handleChange} />
         <span className='not-done' >{notDone && "Kindly fill all the input fields to send a message."}</span>
-        <Button type="submit" className="button" disabled={done}>Send</Button>
+        <Button w={'100%'} mb={'20px'} _hover={'none'} backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} fontFamily={'cursive'} type="submit" className="button" disabled={done}>Send</Button>
         <span className='done'>{done && "Thanks for contacting me and be sure I have recieved your mail."}</span>
       </form>
       <Flex gap={'15px'} lineHeight={'30px'} textAlign={'center'} w={'85%'} m={'auto'} justifyContent={'space-between'}>
