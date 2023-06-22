@@ -59,7 +59,7 @@ import AOS from "aos";
 const Projects = () => {
 
   useEffect(() => {
-    AOS.init({ delay: 300 });
+    AOS.init();
   }, [])
 
   return (
@@ -76,7 +76,7 @@ const Projects = () => {
         data-aos="fade-right">My Projects</Heading>
 
       <Grid>
-        <Box data-aos="flip-up" id="project-sec" _hover={{ bg: "#162a33" }} borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+        <Box data-aos="zoom-in" id="project-sec" _hover={{ bg: "#162a33" }} borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
           <Flex justifyContent={"space-evenly"}>
             <Box w="40%" >
               <Flex justifyContent={"space-between"}>
@@ -110,7 +110,7 @@ const Projects = () => {
           </Flex>
         </Box>
 
-        <Box data-aos="flip-up" id="project-sec" _hover={{ bg: "#162a33" }} borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+        <Box id="project-sec" _hover={{ bg: "#162a33" }} borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
           <Flex justifyContent={"space-evenly"}>
 
             <Box w="40%" >

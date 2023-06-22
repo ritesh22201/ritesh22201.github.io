@@ -26,11 +26,6 @@ const Contact = () => {
     } else {
       emailjs
         .sendForm(
-          // "service_d3pb05e",
-          // "template_21glk6d",
-          // form.current,
-          // "94PuNf-lAN2EX85Ky"
-
           "service_4bgtxc9",
           "template_qpow83e",
           form.current,
@@ -40,7 +35,7 @@ const Contact = () => {
         .then(
           (result) => {
             setDone(true);
-            setFormData({})
+            setFormData({});
           },
           (error) => {
             console.log(error.text);
@@ -63,11 +58,11 @@ const Contact = () => {
       </form>
       <Flex gap={'15px'} lineHeight={'30px'} textAlign={'center'} w={'85%'} m={'auto'} justifyContent={'space-between'}>
         <Box display={'grid'} placeItems={'center'} w={'24%'} borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
-          <Link id='contact-github' href='https://github.com/ritesh22201'><BsGithub style={{ margin: 'auto', fontSize: '35px' }} /></Link>
+          <Link id='contact-github' href='https://github.com/ritesh22201' target='_blank'><BsGithub style={{ margin: 'auto', fontSize: '35px' }} /></Link>
           <Text>Github</Text>
         </Box>
         <Box display={'grid'} placeItems={'center'} w={'24%'} borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
-          <Link id='contact-linkedin' href='https://www.linkedin.com/in/riteshinfo/'><BsLinkedin style={{ margin: 'auto', fontSize: '35px' }} /></Link>
+          <Link id='contact-linkedin' href='https://www.linkedin.com/in/riteshinfo/' target='_blank'><BsLinkedin style={{ margin: 'auto', fontSize: '35px' }} /></Link>
           <Text>LinkedIn</Text>
         </Box>
         <Box display={'grid'} placeItems={'center'} w={'26%'} borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>

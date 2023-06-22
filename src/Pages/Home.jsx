@@ -6,6 +6,10 @@ import Ritesh_Goswami_Resume from '../Assets/Ritesh-Goswami-Resume.pdf';
 
 const Home = () => {
 
+  const openResume = () => {
+    window.open('https://drive.google.com/file/d/12vmGRzVMprilVwXAke-UsZBhbs1Q3ldT/view?usp=share_link');
+  }
+
   return (
     <Box p={'60px 0 40px 0'} id='home' color='white' bg={'black'} >
       <Flex justifyContent={'space-around'} alignItems={'center'}>
@@ -14,10 +18,12 @@ const Home = () => {
           <Heading id='user-detail-name' bgGradient={'linear-gradient(to right, #01b395, #03bd69)'} bgClip='text' mb={'20px'} fontSize={'50px'}>RITESH GOSWAMI</Heading>
           <Heading color={'gray.300'} mb={'40px'} fontSize={'25px'}>FULL STACK WEB DEVELOPER</Heading>
           {/* <Link fontWeight={'bold'} borderRadius={'5px'} p={'7px 17px'} backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} fontFamily={'cursive'} id='resume-button-2' href={Ritesh_Goswami_Resume} download={true} target='_blank'>Download Resume</Link> */}
-          <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} fontFamily={'cursive'} id='resume-button-2' href={Ritesh_Goswami_Resume} download={true} target='_blank'>
-            <Button backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} _hover={'none'}>
-              Download Resume
-            </Button>
+          <Link fontWeight='bold' borderRadius= '5px' backgroundImage= 'linear-gradient(to right, #01b395, #03bd69)' id='resume-link-2' href={Ritesh_Goswami_Resume} download={true} target='_blank'>
+            <Box className="home-icon">
+              <Button id='resume-button-2' onClick={openResume} className='home-resume' backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} _hover={'none'}>
+                Download Resume
+              </Button>
+            </Box>
           </Link>
         </Box>
         <Box>

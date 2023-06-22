@@ -20,8 +20,8 @@ const Navbar = () => {
         <Box boxShadow= 'rgba(0, 0, 0, 0.24) 0px 3px 8px' position="sticky" top='0' className={'bg'} color={'white'} p={'12px 0'} fontSize={'19px'}>
             <nav id='nav-menu' className='nav-menu'>
                 <Flex m='0 30px' p={'10px'} alignItems={'center'} justifyContent={'space-between'}>
-                    <Box className='nav-logo' fontSize='25px' textAlign='start' w={'20%'}>
-                        Ritesh
+                    <Box color={'#03bd69'} fontWeight={'extrabold'} className='nav-logo' fontSize='30px' textAlign='start' w={'20%'}>
+                        {'< R/>'}
                     </Box>
                     <Box w={'55%'}>
                         <Flex justifyContent={'space-between'} alignItems={'center'}>
