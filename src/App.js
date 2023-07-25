@@ -8,11 +8,12 @@ import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import GithubCalender from './Components/GithubCalender';
 import Contact from './Pages/Contact';
+import { Box } from '@chakra-ui/react';
 
 
 function App() {
   return (
-    <div className="App">
+    <Box className="App">
       <Navbar/>
       {/* <AllRoutes/> */}
       <Home/>
@@ -21,7 +22,7 @@ function App() {
       <Projects/>
       <GithubCalender/>
       <Contact />
-    </div>
+    </Box>
   );
 }
 
