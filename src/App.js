@@ -9,6 +9,8 @@ import Projects from './Pages/Projects';
 import GithubCalender from './Components/GithubCalender';
 import Contact from './Pages/Contact';
 import { Box } from '@chakra-ui/react';
+import Tools from './Pages/Tools';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -19,9 +21,11 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Tools/>
       <Projects/>
       <GithubCalender/>
       <Contact />
+      <Footer/>
     </Box>
   );
 }

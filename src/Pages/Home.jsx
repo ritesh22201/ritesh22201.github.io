@@ -1,37 +1,125 @@
-import { Box, Heading, Flex, Image, Button, Link } from '@chakra-ui/react'
-import React from 'react'
-import '../Components/Button.css';
+import React from 'react';
 import image from '../Assets/ritesh_resume_img.jpg';
 import Ritesh_Goswami_Resume from '../Assets/Ritesh-Goswami-Resume.pdf';
 
+import {
+  Box,
+  Heading,
+  Text,
+  Flex,
+  Image,
+  Link,
+  Button,
+} from "@chakra-ui/react";
+import { useEffect } from "react";
+import Typed from "typed.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import "../Css/home.css";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ delay: 300 });
+  }, []);
 
   const openResume = () => {
     window.open('https://drive.google.com/file/d/12vmGRzVMprilVwXAke-UsZBhbs1Q3ldT/view?usp=share_link');
   }
 
+  useEffect(() => {
+    const typed = new Typed(".text", {
+      strings: ["MERN Stack Developer", "Effective Problem Solver"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      showCursor: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+
   return (
-    <Box p={'60px 0 40px 0'} id='home' color='white' bg={'black'} >
-      <Flex justifyContent={'space-around'} alignItems={'center'}>
-        <Box>
-          <Heading color={'gray.300'} mb={'20px'} fontSize={'25px'}>Hi, I'M</Heading>
-          <Heading id='user-detail-name' bgGradient={'linear-gradient(to right, #01b395, #03bd69)'} bgClip='text' mb={'20px'} fontSize={'50px'}>RITESH GOSWAMI</Heading>
-          <Heading color={'gray.300'} mb={'40px'} fontSize={'25px'}>FULL STACK WEB DEVELOPER</Heading>
-          {/* <Link fontWeight={'bold'} borderRadius={'5px'} p={'7px 17px'} backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} fontFamily={'cursive'} id='resume-button-2' href={Ritesh_Goswami_Resume} download={true} target='_blank'>Download Resume</Link> */}
-          <Link fontWeight='bold' borderRadius= '5px' backgroundImage= 'linear-gradient(to right, #01b395, #03bd69)' id='resume-link-2' href={Ritesh_Goswami_Resume} download={true} target='_blank'>
-            <Box className="home-icon">
-              <Button id='resume-button-2' onClick={openResume} className='home-resume' backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} _hover={'none'}>
-                Download Resume
-              </Button>
-            </Box>
-          </Link>
+    <>
+      <Flex
+        flexDirection={{
+          base: "column",
+          sm: "column",
+          md: "column",
+          lg: "row",
+          xl: "row",
+          "2xl": "row",
+        }}
+        bg={"black"}
+        justifyContent={"space-around"}
+        alignItems={"center"}
+        gap="60px"
+        id="home"
+        p="40px"
+        color={"white"}
+        border="none"
+      >
+        <Box width={{ base: '100%', sm: '100%', md: '100%', lg: '40%', xl: '40%', '2xl': '40%' }}>
+          <Box id="home-content">
+            <Heading color={'gray.300'} mt="10px" size="lg" as="h3" className="head">
+              Hey, I'm
+            </Heading>
+            <Heading mt="10px" bgGradient={'linear-gradient(to right, gray.300, gray.200)'} bgClip='text' size="2xl" as="h1" id="user-detail-name">
+              Ritesh Goswami
+            </Heading>
+            <Heading mt="10px" size="lg" as="h3">
+              <span className="text"></span>
+              <span style={{ color: "#03bd69", marginLeft: "3px" }}>|</span>
+            </Heading>
+            <div className='home-sci'>
+              <a href="https://www.linkedin.com/in/riteshinfo/" target='_blank'><FaLinkedin /></a>
+              <a href="https://twitter.com/Riteshgoswami3" target='_blank'><FaTwitter /></a>
+              <a href="https://github.com/ritesh22201" target='_blank'><FaGithub /></a>
+            </div>
+            <Link
+              mt="10px"
+              fontWeight="bold"
+              borderRadius="5px"
+              backgroundImage="linear-gradient(to right, #01b395, #03bd69)"
+              id="resume-link-2"
+              href={Ritesh_Goswami_Resume}
+              download={true}
+              target="_blank"
+            >
+              <Box className="home-icon">
+                <Button
+                  mt="30px"
+                  id="resume-button-2"
+                  onClick={openResume}
+                  _hover={'none'}
+                  className="home-resume"
+                  backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'}
+                >
+                  Download Resume
+                </Button>
+              </Box>
+            </Link>
+          </Box>
         </Box>
-        <Box>
-          <Image w={'350px'} borderRadius={'50%'} className='home-img' src={image} alt='profile image' />
-        </Box>
+
+        <Image
+          src={image}
+          className="home-img"
+          boxShadow="outline"
+          borderColor={"#76446b"}
+          alt="myPic"
+          width={{ base: '60%', sm: '60%', md: '60%', lg: '33%', xl: '33%', '2xl': '33%' }}
+          height="60%"
+          borderRadius="50%"
+        />
       </Flex>
-    </Box>
-  )
-}
+    </>
+  );
+};
 
 export default Home;
