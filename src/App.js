@@ -15,7 +15,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <Box className="App">
+    <Box className="App" fontFamily={{base : 'sans-serif', sm : 'sans-serif', md : 'sans-serif', lg : 'cursive', xl : 'cursive', '2xl' : 'cursive'}}>
       <Navbar/>
       {/* <AllRoutes/> */}
       <Home/>

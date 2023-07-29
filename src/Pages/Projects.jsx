@@ -138,42 +138,6 @@ const Projects = () => {
           </Flex>
         </Box>
 
-        <Box data-aos="flip-up" id="project-sec" _hover={{ bg: "#162a33" }} borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
-          <Flex gap={'30px'} justifyContent={"space-evenly"} direction={{base : 'column-reverse', sm : 'column-reverse', md : 'column-reverse', lg : 'row', xl : 'row', '2xl' : 'row'}}>
-
-            <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}} >
-              <Flex justifyContent={"space-between"}>
-
-                <BiFolder style={{ fontSize: "40px", color: "#388E3C" }} />
-                <Box>
-                  <Flex>
-                    <Link target='_blank' href="https://github.com/ritesh22201/spicy-nerve-9354" className='project-github-link'><FaGithub style={{ fontSize: "40px" }} /></Link>
-                    <Link target='_blank' href="https://remarkable-starlight-9a785a.netlify.app/" className='project-deployed-link'> <BiCopy style={{ fontSize: "40px", marginLeft: "5px" }} /></Link>
-                  </Flex>
-                </Box>
-
-              </Flex>
-              <Heading textAlign={"left"} size={'md'} mt="10px" className='project-title'>American Eagle Clone</Heading>
-              <Text className='project-description' textAlign={"left"} mt="10px">
-                It is a clone of an E-Commerce website called americanEagle.com, which is generally sells apparel products like (shirts, jeans, trousers, etc) for both the genders.
-              </Text>
-              <Text textAlign={"left"}>Built Admin page.</Text>
-              <Text textAlign={"left"}>Developed the product page with add to cart functionality</Text>
-
-              <Box w={'100%'} mt="30px" className='project-tech-stack'>
-                <Flex textAlign={"left"} >
-                  <Text><FaHtml5 style={{ fontSize: "40px", color: "coral" }} /></Text>
-                  <Text m="0px 15px"><FaCss3Alt style={{ fontSize: "40px", color: "blue" }} /></Text>
-                  <Text><SiJavascript style={{ fontSize: "40px", color: "#FDD835" }} /></Text>
-                </Flex>
-              </Box>
-            </Box>
-            <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}}>
-              <Image w="100%" src={indianEagle} />
-            </Box>
-          </Flex>
-        </Box>
-
       </Grid>
     </Box>
   )

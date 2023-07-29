@@ -37,6 +37,7 @@ const Skills = () => {
       </Heading>
       <Grid
         templateColumns={{ base: "repeat(2,1fr)", sm: 'repeat(3,1fr)', md: 'repeat(4,1fr)', lg: "repeat(5,1fr)" }}
+        rowGap="60px"
         justifyContent={'center'}
         margin="50px auto"
         alignItems='center'

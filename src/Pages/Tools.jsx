@@ -6,8 +6,7 @@ import { SiVercel } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { FaSlack } from "react-icons/fa";
 import { ImNpm } from "react-icons/im";
-import { BiLogoZoom } from "react-icons/bi";
-
+import { BsGit } from "react-icons/bs";
 
 const Tools = () => {
 
@@ -51,6 +50,15 @@ const Tools = () => {
                     <Heading className='skills-card-name' ></Heading>
                 </Box>
                 <Box
+                    p="10px"
+                    width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+                    className="skills-card"
+
+                >
+                    <BsGit fontSize={"65px"} style={{ margin: "auto", color : '#F05033' }} className="skills-card-img" />
+                    <Heading className='skills-card-name' ></Heading>
+                </Box>
+                <Box
 
                     p="10px"
                     width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
@@ -66,7 +74,7 @@ const Tools = () => {
                     width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
                     className="skills-card"
                 >
-                    <SiVercel fontSize={"65px"} style={{ margin: "auto" }} color="black" className="skills-card-img" />
+                    <SiVercel fontSize={"65px"} style={{ margin: "auto" }} color="rgba(85, 85, 85, 0.48)" className="skills-card-img" />
                     <Heading className='skills-card-name'></Heading>
                 </Box>
                 <Box

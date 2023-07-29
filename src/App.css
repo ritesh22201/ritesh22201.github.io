@@ -2,15 +2,44 @@
   font-family: cursive;
 }
 
-.App h1{
+.App h1 {
   font-family: cursive;
 }
 
-.App h2{
+.App h2 {
   font-family: cursive;
 }
 
-.App h3{
+.App h3 {
   font-family: cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  .App h1 {
+    font-family: sans-serif;
+  }
+
+  .App h2{
+    font-family: sans-serif;
+  }
+
+  .App h3{
+    font-family: sans-serif;
+  }
+
+  .App h4{
+    font-family: sans-serif;
+  }
+
+  .App h5{
+    font-family: sans-serif;
+  }
+
+  .App h6{
+    font-family: sans-serif;
+  }
+
+  .App a{
+    font-family: sans-serif;
+  }
+}

@@ -55,7 +55,7 @@ const GithubCalender = () => {
                     marginBottom={{ base: "30px", sm: "50px" }}>
                     <Heading color={'gray.300'} mt={'30px'} size={"xl"}>Github Streaks</Heading>
                 </Box>
-                <Box w={{base : '85%', sm : '80%', md : '70%', lg : '50%', xl : '45%', '2xl' : '45%'}} m="auto">
+                <Box w={{base : '92%', sm : '92%', md : '80%', lg : '50%', xl : '45%', '2xl' : '45%'}} m="auto">
                     <Image m={'auto'} id="github-streak-stats"
                         src="https://github-readme-streak-stats.herokuapp.com/?user=ritesh22201&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=#a084ca"
                         alt="streak-stat" />
@@ -73,7 +73,7 @@ const GithubCalender = () => {
                 </Box>
 
 
-                <Box w={{base : '85%', sm : '80%', md : '70%', lg : '50%', xl : '45%', '2xl' : '45%'}} m="auto">
+                <Box w={{base : '92%', sm : '92%', md : '80%', lg : '50%', xl : '45%', '2xl' : '45%'}} m="auto">
                     <Image m={'auto'} id="github-stats-card"
                         src="https://github-readme-stats.vercel.app/api?username=ritesh22201&show_icons=true&title_color=#4c3575&text_color=#4c3575&icon_color=#4c3575&bg_color=red&border_radius=10&border_color=#4c3575"
                         alt="stat-card" />
@@ -89,7 +89,7 @@ const GithubCalender = () => {
                     marginBottom={{ base: "30px", sm: "50px" }}>
                     <Heading mt={'30px'} color={'gray.300'} size={"xl"}>Most Used Languages</Heading>
                 </Box>
-                <Box m={'auto'} w={{base : '85%', sm : '80%', md : '80%', lg : '55%', xl : '55%', '2xl' : '55%'}}>
+                <Box m={'auto'} w={{base : '92%', sm : '92%', md : '80%', lg : '55%', xl : '55%', '2xl' : '55%'}}>
                     <Image m={'auto'} id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ritesh22201&title_color=4C3575&icon_color=#4c3575&text_color=#4c3575&bg_color=#a084ca&show_icons=true" alt='stat-top-lang' />
                 </Box>
             </Box>
