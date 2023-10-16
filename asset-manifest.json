@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c917d4ff.css",
-    "main.js": "/static/js/main.0c25e895.js",
+    "main.js": "/static/js/main.767e5a7e.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/myntra-landing.png": "/static/media/myntra-landing.39ac3dfe27ca7d6af6d4.png",
     "static/media/tech_cube.png": "/static/media/tech_cube.8fef1a30005c9a4d11c5.png",
     "static/media/dashDonation.png": "/static/media/dashDonation.75335099ffd95f68ad71.png",
     "static/media/vscode5.png": "/static/media/vscode5.44911d183b27938ab451.png",
-    "static/media/Ritesh-Goswami-Resume.pdf": "/static/media/Ritesh-Goswami-Resume.8c7ab48444ccbf1dd29e.pdf",
-    "static/media/indian_eagle.png": "/static/media/indian_eagle.7d57c7e3014808c6d5d8.png",
+    "static/media/Ritesh_Goswami_resume.pdf": "/static/media/Ritesh_Goswami_resume.610cd66ec53082cda653.pdf",
     "static/media/fullStackTodos.png": "/static/media/fullStackTodos.fef0f27ba19e9273fd21.png",
     "static/media/ritesh_resume_img.jpg": "/static/media/ritesh_resume_img.9dbb78a86450561f4b58.jpg",
     "static/media/about1_img.avif": "/static/media/about1_img.c1f7c5ce9c00b06b4401.avif",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.c917d4ff.css.map": "/static/css/main.c917d4ff.css.map",
-    "main.0c25e895.js.map": "/static/js/main.0c25e895.js.map",
+    "main.767e5a7e.js.map": "/static/js/main.767e5a7e.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c917d4ff.css",
-    "static/js/main.0c25e895.js"
+    "static/js/main.767e5a7e.js"
   ]
 }
