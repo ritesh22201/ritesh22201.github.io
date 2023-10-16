@@ -14,7 +14,7 @@ import {
     DrawerCloseButton,
 } from '@chakra-ui/react'
 import { HashLink } from 'react-router-hash-link';
-import Ritesh_Goswami_Resume from '../Assets/Ritesh-Goswami-Resume.pdf';
+import Ritesh_Goswami_Resume from '../Assets/Ritesh_Goswami_resume.pdf';
 import './Button.css';
 import 'animate.css';
 import AOS from 'aos';
@@ -70,7 +70,7 @@ const Navbar = () => {
                                         </Button>
                                     </VStack>
                                     <HStack w={'full'} justifyContent={'space-evenly'} pos={'absolute'} bottom={'5'} left={'0'}>
-                                        <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} className='nav-link resume' id='resume-button-1' href={Ritesh_Goswami_Resume} download={true} target='_blank'>
+                                        <Link fontWeight={'bold'} borderRadius={'5px'} fontFamily= 'sans-serif' backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} className='nav-link resume' id='resume-button-1' href={Ritesh_Goswami_Resume} download={true} target='_blank'>
                                             <Button backgroundImage={'linear-gradient(to right, #01b395, #03bd69)'} _hover={'none'}>
                                                 Resume
                                             </Button>

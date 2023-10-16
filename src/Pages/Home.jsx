@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../Assets/ritesh_resume_img.jpg';
-import Ritesh_Goswami_Resume from '../Assets/Ritesh-Goswami-Resume.pdf';
+import Ritesh_Goswami_Resume from '../Assets/Ritesh_Goswami_resume.pdf';
 
 import {
   Box,
@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/12vmGRzVMprilVwXAke-UsZBhbs1Q3ldT/view?usp=share_link');
+    window.open('https://drive.google.com/file/d/1ap8ybmhHtW6zwl64GlfcDit9dScN9lWp/view?usp=sharing');
   }
 
   useEffect(() => {
